@@ -24,6 +24,7 @@
   },
   "plugins": ["react", "prettier", "@typescript-eslint", "react-hooks"],
   "rules": {
+    "camelcase": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
@@ -33,7 +34,8 @@
       "error",
       "ignorePackages",
       {
-        "ts": "never"
+        "ts": "never",
+        "tsx": "never"
       }
     ]
   },

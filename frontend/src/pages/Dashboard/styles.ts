@@ -49,7 +49,6 @@ export const Content = styled.div`
 
   align-items: center;
   padding: 40px 200px;
-  border: 1px solid #000;
 `;
 
 export const Title = styled.h2`
@@ -58,15 +57,30 @@ export const Title = styled.h2`
 `;
 
 export const SubTitle = styled.span`
+  margin-top: 20px;
   font-size: 16px;
 `;
 
 export const DataBox = styled.div`
   display: flex;
-  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 30px;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
 `;
 
-export const Table = styled.div``;
+export const Table = styled.div`
+  margin-right: 40px;
+
+  @media (max-width: 900px) {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+`;
 
 export const Item = styled.ul`
   display: flex;

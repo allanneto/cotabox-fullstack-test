@@ -1,8 +1,7 @@
 import React from 'react';
 
-import GlobalStyle from './styles/global';
-
 import { BrowserRouter } from 'react-router-dom';
+import GlobalStyle from './styles/global';
 
 import Routes from './routes';
 
@@ -10,8 +9,8 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Routes></Routes>
-        <GlobalStyle></GlobalStyle>
+        <Routes />
+        <GlobalStyle />
       </BrowserRouter>
     </>
   );
